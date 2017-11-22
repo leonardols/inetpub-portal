@@ -1,0 +1,76 @@
+html {
+    /* width: 100%; */  
+    height: 100%;
+}
+
+body {
+  background-color: #FFFFFF;
+  background-image: url(innovation.png); 
+  /*background-size: contain;
+  */background-size:100% 100%;
+  background-repeat:no-repeat;
+  padding: 20px;
+  margin: 0;
+}
+h1, h2, p, ul, li {
+  font-family: Helvetica, Arial, sans-serif;
+}
+ul.header li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+}
+ul.header {
+  background-color: #111;
+  padding: 0;
+  background-image: url(logo.png); 
+  background-size: contain;
+  background-position-x: right;
+  background-repeat: no-repeat;
+}
+ul.header li a {
+  color: #FFF;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+}
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #111;
+  text-align: center;
+}
+footer p {
+  color: white;
+  font-size: small;
+  text-decoration: none;
+}
+.content {  
+  background-color: #FFF;
+  padding: 20px;
+}
+.content h2 {
+  padding: 0;
+  margin: 0;
+}
+.content li {
+  margin-bottom: 10px;
+} 
+.active {
+  background-color: #F87217; 
+}
+#app {
+  height: auto; 
+  width: auto;
+  margin: 0 auto;
+
+}
+
+.title {
+  font-family: 'Lobster', Georgia, Times, serif;
+  font-size: 35px;
+  line-height: 100px;
+}
