@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<!--html>
   
 <head>
   <script src="https://unpkg.com/react@15.3.2/dist/react.js"></script>
   <script src="https://unpkg.com/react-dom@15.3.2/dist/react-dom.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+  <script src="vendors/babel.min.js"></script>
   <script src="https://npmcdn.com/react-router@3.0.2/umd/ReactRouter.min.js"></script>
   <style>
  body {
@@ -58,7 +58,8 @@ img{ width:10%; }
   
   </div>
   
-  <script type="text/babel">
+ <script type="text/babel" src="components/home.js"/>
+ <script type="text/babel">
   var { Router,
       Route,
       IndexRoute,
@@ -67,25 +68,6 @@ img{ width:10%; }
       Link } = ReactRouter;
   var destination = document.querySelector("#container");
  
-var Home = React.createClass({
-  render: function() {
-    return (
-      <div>
-         <h2>HELLO</h2>
-         <p>Cras facilisis urna ornare ex volutpat, et
-         convallis erat elementum. Ut aliquam, ipsum vitae
-         gravida suscipit, metus dui bibendum est, eget rhoncus nibh
-         metus nec massa. Maecenas hendrerit laoreet augue
-         nec molestie. Cum sociis natoque penatibus et magnis
-         dis parturient montes, nascetur ridiculus mus.
-         </p>
-         <p>Duis a turpis sed lacus dapibus elementum sed eu lectus.
-         </p>
-      </div>
-    );
-  } 
-}); 
-
   var Contact = React.createClass({
   render: function() {
       return (
@@ -134,7 +116,6 @@ var About = React.createClass({
           </ol>
         </div>
       );
-    }
 });
  
   var App = React.createClass({
@@ -167,6 +148,21 @@ var About = React.createClass({
       destination
     );
   </script>
+
+   
 </body>
   
+</html-->
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Inetpub Ltd</title>
+  </head>
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <body>
+    <div id="app">
+      <script src="src/client/public/bundle.js" type="text/javascript"></script>
+    </div>
+  </body>
 </html>
