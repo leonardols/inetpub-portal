@@ -4,10 +4,8 @@ class Contact extends React.Component{
   render(){
     return (
       <div>
-        <h2>GOT QUESTIONS?</h2>
-        <p>
-        The easiest thing to do is post on our <a href="http://forum.kirupa.com">forums</a>.
-        </p>
+        <h2 className="title">Interested?</h2>
+        <p>Send an email to us <a href="mailto:contact@inetpub.co.uk">&#9993;</a></p>
       </div>
     );
   }

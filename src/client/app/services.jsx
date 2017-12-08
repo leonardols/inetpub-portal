@@ -4,13 +4,14 @@ class Services extends React.Component{
   render(){
     return (
         <div>
-          <h2>Services</h2>
+          <h2 className="title">Services</h2>
           <ol>
-            <li>Enterprise Architecture</li>
-            <li>Microservice Architecture</li>
-            <li>API revolution and Open Platforms</li>
-            <li>Digital Transformation</li>
-            <li>Data Domain Architecture</li>
+            <li>End 2 End Software Architecture</li>
+            <li>Microservice and Cloud Architecture</li>
+            <li>API revolution and Reactive Applications</li>
+            <li>Digital Transformation and Service Ownership</li>
+            <li>Data Domain, Event sourcing, Event driven, CQRS...</li>
+            <li>Agile Methodologies combining Automation & XP practices</li> 
           </ol>
         </div>
     );

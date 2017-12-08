@@ -11,6 +11,13 @@ body {
   padding: 20px;
   margin: 0;
 }
+
+p {
+  color: #264d73;
+  font-size: 20px;
+  text-align: justify;
+}
+
 h1, h2, p, ul, li {
   /*font-family: Helvetica, Arial, sans-serif;*/
   /*line-height: 75px;
@@ -69,6 +76,9 @@ footer p {
 }
 .content li {
   margin-bottom: 10px;
+  color: #264d73;
+  font-size: 20px;
+  text-align: justify;
 } 
 
 .header a.active {
@@ -87,4 +97,5 @@ footer p {
   font-family: 'Lobster', Georgia, Times, serif;
   font-size: 35px;
   line-height: 100px;
+  color: #264d73;
 }
