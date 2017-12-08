@@ -58,11 +58,10 @@ footer {
   left: 0;
   background-color: #264d73;
   text-align: center;
-  /*font-family: 'Lobster', Georgia, Times, serif;*/
 }
 footer p {
   color: white;
-  font-size: medium;
+  font-size: small;
   text-decoration: none;
 }
 .content {
