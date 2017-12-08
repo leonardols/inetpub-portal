@@ -5,14 +5,12 @@ class Services extends React.Component{
     return (
         <div>
           <h2>Services</h2>
-          <p>Mauris sem velit, vehicula eget sodales vitae,
-          rhoncus eget sapien:</p>
           <ol>
-            <li>Nulla pulvinar diam</li>
-            <li>Facilisis bibendum</li>
-            <li>Vestibulum vulputate</li>
-            <li>Eget erat</li>
-            <li>Id porttitor</li>
+            <li>Enterprise Architecture</li>
+            <li>Microservice Architecture</li>
+            <li>API revolution and Open Platforms</li>
+            <li>Digital Transformation</li>
+            <li>Data Domain Architecture</li>
           </ol>
         </div>
     );
