@@ -12,14 +12,3 @@ ReactDOM.render((
   </HashRouter>
   ), document.getElementById('app')
 );
-
-/*
-<BrowserRouter>
-    <Route path="/" component={App}>
-      <IndexRoute component={Home}/>
-      <Route path="services" component={Services} />
-      <Route path="about" component={About} />
-      <Route path="contact" component={Contact} />
-    </Route>
-  </BrowserRouter>
-*/
