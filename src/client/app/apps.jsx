@@ -5,7 +5,7 @@ class Apps extends React.Component{
     return (
       <div>
         <h2 className="title">Coming soon!</h2>
-        <p>Exciting things are comming here for free.</p>
+        <p>Exciting things are coming here for free.</p>
       </div>
     );
   }
