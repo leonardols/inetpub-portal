@@ -11,29 +11,33 @@ body {
   padding: 20px;
   margin: 0;
 }
-
 p {
   color: #264d73;
   font-size: 18px;
   text-align: justify;
 }
-
-h1, h2, p, ul, li {
-  /*font-family: Helvetica, Arial, sans-serif;*/
-  /*line-height: 75px;
-  /*font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-*/}
 ul.header li {
-  /*font-family: 'Lobster', Georgia, Times, serif;
-  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-  font-family: Lato;  
- 
- */ font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
- 
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
   font-size: 20px;
   display: inline;
   list-style-type: none;
   margin: 0;
+}
+ul.mobile_header li {
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-size: 20px;
+  display: block;
+  list-style-type: none;
+  margin: 0;
+}
+ul.mobile_header {
+  border-radius: 25px;  
+  background-color: #264d73;/*#111;*/
+  padding: 0;
+  /*background-image: url(logo.png);*/ 
+  background-size: contain;
+  background-position-x: right;
+  background-repeat: no-repeat;
 }
 ul.header {
   border-radius: 25px;  
@@ -44,6 +48,13 @@ ul.header {
   background-position-x: right;
   background-repeat: no-repeat;
 }
+ul.mobile_header li a {
+  color: #e0e0d2;/*#FFF;*/
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+}
 ul.header li a {
   color: #e0e0d2;/*#FFF;*/
   font-weight: bold;
@@ -51,6 +62,7 @@ ul.header li a {
   padding: 20px;
   display: inline-block;
 }
+
 footer {
   position: absolute;
   right: 0;
@@ -84,6 +96,24 @@ footer p {
   border-radius: 25px;  
   background-color: #ff9900;
   color: #264d73;
+}
+
+.mobile_header a.mobile_active {
+  border-radius: 25px;  
+  background-color: #ff9900;
+  color: #264d73;
+}
+
+.mobile_header li i.fa-chevron-circle-down {
+  right: 12px;
+  left: auto;
+  font-size: 32px;
+}
+
+.mobile_header li i {
+  position: absolute;
+  color: white;
+  transition: all 0.4s ease;
 }
 
 #app {

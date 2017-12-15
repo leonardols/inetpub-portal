@@ -2,20 +2,30 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import Menu from './menu.jsx';
+import MobileMenu from './mobile_menu.jsx';
 import Home from './home.jsx';
 import Services from './services.jsx';
 import About from './about.jsx';
 import Contact from './contact.jsx';
 import Apps from './apps.jsx';
 import Footer from './footer.jsx'
+import MediaQuery from 'react-responsive';
 
 import { Switch, Route } from 'react-router-dom'; 
 
 class App extends React.Component {
   render () {
     return (
-      <div className="panel">
-        <Menu />
+    	<div className="panel">
+	    	<MediaQuery maxDeviceWidth={1224}>
+		      	{(matches) => {
+		    		if (matches) {
+		      			return <MobileMenu/>;
+		    		} else {
+				    	return <Menu/>;
+		    		}
+		  		}}
+			</MediaQuery>
 		<div className="content">
 		  <Switch>
           	<Route exact path='/' component={Home}/>
@@ -26,7 +36,7 @@ class App extends React.Component {
           </Switch>
 		</div>
 		<Footer />
-	  </div>
+	  </div>	
     );
   }
 }
