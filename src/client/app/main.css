@@ -100,13 +100,17 @@ footer p {
 
 .mobile_header a.mobile_active {
   border-radius: 25px;  
-  background-color: #ff9900;
-  color: #264d73;
 }
 
+.mobile_header li a.mobile_active i {
+  -webkit-transform: rotate(180deg);
+}
+
+
 .mobile_header li i.fa-chevron-circle-down {
-  right: 12px;
+  right: 40px;
   left: auto;
+  margin-top: 10px;
   font-size: 32px;
 }
 
